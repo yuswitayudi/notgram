@@ -22,15 +22,14 @@ def main():
             print("New Judul: {} Url: {}".format(title, link['href']))
             list_title.insert(0, title)
             list_content.insert(0,link['href'])
-            time.sleep(5)
-            proc = subprocess.Popen(["bash", "telegram.sh"], stdout=subprocess.PIPE)
-            (out, err) = proc.communicate()
 
     f.write(json.dumps(list_content))
     f2.write(json.dumps(list_title))
     f.truncate()
-    f2.truncate()
-    
+    f2.truncate()   
+    proc = subprocess.Popen(["bash", "telegram.sh"], stdout=subprocess.PIPE)
+    (out, err) = proc.communicate()
 
 if __name__ == '__main__':
     main()
+
