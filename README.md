@@ -1,4 +1,4 @@
-##Notgram
+## Notgram
 
 untuk menjalankan program ini pastikan untuk setting token dan chat id telegram sudah disesuaikan
 
@@ -6,5 +6,5 @@ untuk menjalankan program ini pastikan untuk setting token dan chat id telegram 
 Requirement
 ------------
 - python3.6
-- install dependency python di etc/requirement.txt
+- install dependency python di etc/requirement.txt (sudo pip3 install -r etc/requirement.txt)
 
